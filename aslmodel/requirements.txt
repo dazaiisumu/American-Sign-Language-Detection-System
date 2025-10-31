@@ -1,0 +1,25 @@
+# Core dependencies
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Deep learning
+tensorflow
+keras
+
+# Computer vision
+opencv-python
+mediapipe
+
+# Utilities
+jupyter
+notebook
+scipy
+joblib
+h5py
+
+# Optional but useful
+tqdm
+pillow

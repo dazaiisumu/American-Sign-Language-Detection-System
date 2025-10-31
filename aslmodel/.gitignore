@@ -1,0 +1,33 @@
+# === Python build and cache ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === Virtual environments ===
+venv/
+.env/
+.env
+
+# === Notebook checkpoints ===
+.ipynb_checkpoints/
+
+# === System / IDE ===
+.DS_Store
+.vscode/
+.idea/
+
+# === Model / large files (optional) ===
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# === Logs or temp data ===
+*.log
+tmp/
+
+
+# Ignore large image dataset
+data/
