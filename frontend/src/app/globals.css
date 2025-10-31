@@ -1,0 +1,75 @@
+/* Import Tailwind base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: install tw-animate-css via npm first if needed */
+/* npm install tw-animate-css */
+@import "tw-animate-css";
+
+/* Root variables for light mode */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #f8f8f8;
+  --card-foreground: #171717;
+  --popover: #ffffff;
+  --popover-foreground: #171717;
+  --primary: #a42f1d; /* adjust colors */
+  --primary-foreground: #ffffff;
+  --secondary: #b1591d;
+  --secondary-foreground: #ffffff;
+  --muted: #f0f0f0;
+  --muted-foreground: #171717;
+  --accent: #b1591d;
+  --accent-foreground: #ffffff;
+  --destructive: #925b0b;
+  --destructive-foreground: #ffffff;
+  --border: #dadada;
+  --input: #f6f6f6;
+  --ring: rgba(164, 47, 29, 0.5);
+  --radius: 0.5rem;
+  --sidebar: #f8f8f8;
+  --sidebar-foreground: #171717;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #111111;
+    --card-foreground: #ededed;
+    --popover: #0a0a0a;
+    --popover-foreground: #ededed;
+    --primary: #b1591d;
+    --primary-foreground: #0a0a0a;
+    --secondary: #444444;
+    --secondary-foreground: #ededed;
+    --muted: #222222;
+    --muted-foreground: #cccccc;
+    --accent: #a42f1d;
+    --accent-foreground: #ededed;
+    --destructive: #925b0b;
+    --destructive-foreground: #ededed;
+    --border: #333333;
+    --input: #111111;
+    --ring: rgba(177, 89, 29, 0.5);
+    --sidebar: #111111;
+    --sidebar-foreground: #ededed;
+  }
+}
+
+/* Base styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Example usage for borders, rounded corners, etc. */
+* {
+  border-color: var(--border);
+  outline-color: var(--ring);
+  border-radius: var(--radius);
+}
