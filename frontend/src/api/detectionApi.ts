@@ -8,6 +8,7 @@ export interface DetectionApiResponse<T = any> {
 /** --------- Session APIs --------- */
 export interface SessionHistoryItem {
   id: number;
+  userName: string;
   startTime: string;
   duration: number;
   totalPredictions: number;
